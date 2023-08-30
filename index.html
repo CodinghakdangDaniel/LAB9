@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab9</title>
+</head>
+<body style="text-align: center;">
+
+    <p id="result"></p>
+    
+    <button onclick="white()">clear</button>
+    <button onclick="red()">red</button>
+    <button onclick="blue()">blue</button>
+    <button onclick="yellow()">yellow</button>
+
+    
+    <script>
+            var step1 = prompt("숫자를 입력해 주세요");
+            if (step1 == null) {
+                text = "User cancelled the prompt.";
+            } 
+            else {
+                var step2 = prompt("+-x/중 하나를 입력하세요");
+                
+                }if (step2 == null) {
+                    text = "User cancelled the prompt.";
+                }
+                else {
+                    var step3 = prompt("다음 숫자를 입력해주세요");
+                }
+
+                    if (step3 == null) {
+                        text = "User cancelled the prompt."
+                    } else {
+                        var final;
+                    }
+            document.getElementById("result").innerHTML = step1 + " " + step2 + " " + step3;
+                    
+
+            var white = document.getElementBtyId("white");
+            var red = document.getElementBtyId("red");
+            var blue= document.getElementBtyId("blue");
+            var yellow = document.getElementBtyId("yellow");
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+            function white() {
+                changeColor('white');
+            }
+            function red() {
+                changeColor('red');
+            }
+            function blue() {
+                changeColor('blue');
+            }
+            function yellow() {
+                changeColor('yellow');
+            }
+            
+    </script>
+</body>
+</html>
